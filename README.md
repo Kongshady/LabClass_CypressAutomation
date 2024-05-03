@@ -12,7 +12,7 @@
 
 **Or use Git Clone**
 
-- Git clone is easier to use because it grabs the entire history and content of a repository with just one command.
+Git clone is easier to use because it grabs the entire history and content of a repository with just one command.
 
 ### Installing Cypress and Getting Started
 - To install cypress, open the terminal and type:
