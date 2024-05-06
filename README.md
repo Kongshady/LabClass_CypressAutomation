@@ -21,9 +21,10 @@
    - Use a code editor such as VSCode to open the files within the "cypress-automation" folder.
    - Alternatively, you can use any other text editor of your choice.
 
-## Or use Git CLone ##
+#### Or use Git CLone 
 
 Git clone is a more efficient way to obtain the repository as it retrieves the entire history and content with just one command.
+- git clone https://github.com/Kongshady/LabClass_CypressAutomation.git
 
 ### Installing Cypress and Getting Started
 1. Install Cypress:
