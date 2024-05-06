@@ -1,4 +1,4 @@
-# LabClass
+## LabClass: Cypress Automation Setup Guide ##
 
 ### Node JS Setup and Installation
 1. Download NodeJS:
