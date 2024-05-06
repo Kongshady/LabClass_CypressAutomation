@@ -37,7 +37,7 @@ Git clone is a more efficient way to obtain the repository as it retrieves the e
    - After Cypress is successfully installed, run the following command in your terminal:
    - "npx cypress run"
   
-## When the App is Opened ##
+### When the App is Opened
 
 1. Choose Browser and Spec:
    - Once Cypress in launched, you will be prompted to choose your desired browser. It is recommended to select Chrome.
