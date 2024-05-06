@@ -18,7 +18,7 @@
    - Locate the extracted folder named "cypress-automation"
    - Open this folder to access its contents.
 4. Open with VSCode or Any Editor:
-   - Use a code editor such as VSCode to open the files within the "cypress-automation" folder.
+   - Use a code editor such as VSCode to open the files within the "cypress" folder.
    - Alternatively, you can use any other text editor of your choice.
 
 #### Or use Git CLone 
@@ -31,7 +31,7 @@ Git clone is a more efficient way to obtain the repository as it retrieves the e
 ### Installing Cypress and Getting Started
 1. Install Cypress:
    - Open your terminal or command prompt.
-   - Navigate to the directory where your project files are located (the "cypress-automation"folder).
+   - Navigate to the directory where your project files are located (the "cypress"folder).
    - Run the following command: "npm install cypress --save-dev"
 2. Run Cypress Application
    - After Cypress is successfully installed, run the following command in your terminal:
