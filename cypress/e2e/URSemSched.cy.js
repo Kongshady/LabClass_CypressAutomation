@@ -29,6 +29,6 @@ describe('Semester Schedules Users Route API', () => {
     cy.get('.opblock-summary-description').contains('Delete Semester Schedule').click()
     cy.get('.try-out__btn').eq(0).click()
     cy.get('input').eq(0).type('2004')
-    // cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
+    cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
   })
 })

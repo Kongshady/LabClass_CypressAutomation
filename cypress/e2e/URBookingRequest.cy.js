@@ -23,7 +23,7 @@ describe('Booking Request Users Route API', () => {
     cy.visit('http://127.0.0.1:8000/docs#/')
     cy.get('.opblock-summary-description').contains('Delete Booking Request').click()
     cy.get('.try-out__btn').eq(0).click()
-    cy.get('input').eq(0).type('20')
-    // cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
+    cy.get('input').eq(0).type('29')
+    cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
   })
 })

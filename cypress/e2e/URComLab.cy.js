@@ -10,7 +10,7 @@ describe('Computer Labs Users Route API', () => {
     cy.visit('http://127.0.0.1:8000/docs#/')
     cy.get('.opblock-summary-description').contains('Create Computer Lab').click()
     cy.get('.try-out__btn').eq(0).click()
-    cy.get('input').eq(0).type('204')
+    cy.get('input').eq(0).type('207')
     cy.get('input').eq(1).type('105')
     // cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
   })
@@ -19,7 +19,7 @@ describe('Computer Labs Users Route API', () => {
     cy.visit('http://127.0.0.1:8000/docs#/')
     cy.get('.opblock-summary-description').contains('Delete Computer Lab').click()
     cy.get('.try-out__btn').eq(0).click()
-    cy.get('input').eq(0).type('204')
-    // cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
+    cy.get('input').eq(0).type('207')
+    cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
   })
 })
