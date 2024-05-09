@@ -14,7 +14,6 @@ describe('View Booking Page', () => {
     cy.get('.p-inputtext').eq(1).type('admin')
     cy.get('.loginButton').click()
     cy.get('.menuLabel').contains('Bookings').click()
-    cy.get('#detailsButton').click()
   })
 
   it('View Detailed Booking Information', () => {

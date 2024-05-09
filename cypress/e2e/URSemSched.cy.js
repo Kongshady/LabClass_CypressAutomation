@@ -4,6 +4,10 @@ describe('Semester Schedules Users Route API', () => {
     cy.get('.opblock-summary-description').contains('Read Semester Schedules').click()
     cy.get('.try-out__btn').eq(0).click()
     cy.get('.opblock-control__btn').eq(0).click()
+    cy.request('GET','http://127.0.0.1:8000/docs#/Instructors/read_instructors_api_instructors__get').then((response) => {
+      expect(response.status).to.eq(200)
+      expect(response.body).to.have.length.above(0)
+    })
   })
 
   it('Creates a Semester schedule', () => {
@@ -21,7 +25,11 @@ describe('Semester Schedules Users Route API', () => {
     cy.get('input').eq(8).type('2nd Year')
     cy.get('input').eq(9).type('Section B')
     cy.get('input').eq(10).type('BSIT')
-    // cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
+    cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
+    cy.request('GET','http://127.0.0.1:8000/docs#/Instructors/read_instructors_api_instructors__get').then((response) => {
+      expect(response.status).to.eq(200)
+      expect(response.body).to.have.length.above(0)
+    })
   })
 
   it('Existed semester schedule is deletable', () => {
@@ -30,5 +38,9 @@ describe('Semester Schedules Users Route API', () => {
     cy.get('.try-out__btn').eq(0).click()
     cy.get('input').eq(0).type('2004')
     cy.get('.opblock-control__btn').eq(0).click() // To prevent from submitting a database
+    cy.request('GET','http://127.0.0.1:8000/docs#/Instructors/read_instructors_api_instructors__get').then((response) => {
+      expect(response.status).to.eq(200)
+      expect(response.body).to.have.length.above(0)
+    })
   })
 })
